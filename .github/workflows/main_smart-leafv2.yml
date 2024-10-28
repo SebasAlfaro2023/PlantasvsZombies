@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'Smart-LeafV2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FBF39F1DDE4443159224920FDE55D392 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_625A9573B4F042A493DCE84C8EF36519 }}
