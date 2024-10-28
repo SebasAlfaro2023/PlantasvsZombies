@@ -1,0 +1,253 @@
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid #c5e1a5; /* Borde verde claro */
+}
+
+body {
+    background-color: #96eaff; /* Fondo beige claro */
+    color: #333333; /* Color de texto oscuro para un buen contraste */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+}
+
+.header-img {
+    max-width: 150px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid #c5e1a5; /* Borde verde claro */
+}
+
+.mini-header {
+    background-color: #aed581; /* Color verde suave */
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.2em; /* Aumentar tamaño de fuente */
+}
+
+.planta {
+    background-color: #e8f5e9; /* Fondo verde muy claro */
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.planta h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.planta img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 256px;      /* Establece el ancho a 256 píxeles */
+    height: 256px;     /* Establece la altura a 256 píxeles */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta si es necesario */
+}
+
+
+h1 {
+    font-size: 2.5em;
+    color: #33691e; /* Verde oscuro para el título */
+    margin: 0;
+}
+
+h2 {
+    color: #000000; /* Gris oscuro */
+    margin-top: 0;
+}
+
+h3 {
+    color: #689f38; /* Verde claro para los subtítulos */
+    margin-top: 10px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Colores de fondo según la predicción */
+.fondo-verde {
+    background-color: #9bdb8e; /* Verde claro, asociado a salud */
+    color: #000000; /* Texto en un tono verde oscuro */
+}
+
+.fondo-naranja {
+    background-color: #ee7342; /* Rojo oscuro */; /* Marrón */; /* Naranja claro, asociado a enfermedad */
+    color: #0c0b0b; /* Texto en un tono marrón oscuro */
+}
+
+/* Efectos de hover */
+.planta:hover {
+    filter: brightness(90%); /* Oscurece un poco al pasar el cursor */
+}
+
+/* Efectos adicionales (opcional) */
+.fondo-verde:hover, .fondo-naranja:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+
+.menu-toggle {
+    display: none; /* Ocultar por defecto */
+    flex-direction: column; /* Apilar los elementos */
+    cursor: pointer; /* Cambiar cursor */
+}
+
+header {
+    justify-content: space-between; 
+    background-color: #20626e; /* Fondo del encabezado - verde suave */
+    padding: 15px 20px; /* Ajustar el padding */
+    display: flex;
+    align-items: center; /* Alinear elementos verticalmente */
+}
+
+.logo {
+    flex: 0 0 auto; /* No permitir que el logo crezca */
+}
+
+.header-logo {
+    max-width: 100px; /* Tamaño del logo */
+    height: auto; /* Mantener la proporción del logo */
+}
+
+nav {
+    flex: 1; /* Tomar todo el espacio disponible */
+    display: flex; /* Cambiar el display a flex para centrar */
+    justify-content: center; /* Centrar el contenido */
+}
+
+.nav-links {
+    list-style: none; /* Eliminar puntos de la lista */
+    display: flex; /* Usar flexbox */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Espaciado entre elementos */
+}
+
+.nav-links a {
+    text-decoration: none; /* Sin subrayado */
+    color: rgb(255, 255, 255); /* Color del texto */
+    font-weight: bold; /* Negrita */
+    transition: color 0.3s, background-color 0.3s; /* Efecto de transición */
+    padding: 8px 12px; /* Espaciado interno para mejorar la apariencia */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.nav-links a:hover {
+    color: #e0f2f1; /* Color al pasar el mouse */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo ligero al pasar el mouse */
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+.menu-toggle {
+    display: none; /* Ocultar por defecto */
+    flex-direction: column; /* Apilar los elementos */
+    cursor: pointer; /* Cambiar cursor */
+}
+
+.bar {
+    height: 4px; /* Altura de las barras */
+    width: 25px; /* Ancho de las barras */
+    background-color: white; /* Color de las barras */
+    margin: 4px 0; /* Espaciado entre barras */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 600px) {
+        .header-logo {
+            display: none; /* Ocultar el logo en móvil */
+        }
+    
+        /* Otros estilos ya existentes */
+        nav {
+            display: none; /* Ocultar el menú por defecto en móvil */
+        }
+    
+        .menu-toggle {
+            display: flex; /* Mostrar el ícono de hamburguesa en móvil */
+        }
+    
+        .nav-links.active {
+            display: flex; /* Mostrar el menú cuando está activo */
+            flex-direction: column; /* Apilar verticalmente */
+            position: absolute; /* Posicionamiento absoluto */
+            top: 60px; /* Espaciado desde el encabezado */
+            left: 0; /* Alinear a la izquierda */
+            background-color: #4caf50; /* Fondo verde */
+            width: 100%; /* Ancho completo */
+            z-index: 1; /* Asegurarse que esté arriba */
+        }
+    
+        .nav-links li {
+            margin: 10px 0; /* Espaciado entre elementos en vertical */
+            text-align: center; /* Centrar el texto */
+        }
+  
+
+    .nav-links {
+        display: none; /* Ocultar enlaces en móvil */
+        flex-direction: column; /* Apilar verticalmente */
+        width: 100%; /* Ancho completo */
+        position: absolute; /* Posicionamiento absoluto */
+        top: 60px; /* Espaciado desde el encabezado */
+        left: 0; /* Alinear a la izquierda */
+        background-color: #4caf50; /* Fondo verde */
+        z-index: 1; /* Asegurarse que esté arriba */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el menú desplegable */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+
+    .nav-links.active {
+        display: flex; /* Mostrar cuando está activo */
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostrar el menú móvil */
+    }
+
+    .menu-toggle .bar {
+        transition: transform 0.3s; /* Animación para el menú */
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px); /* Animación de la primera barra */
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0; /* Ocultar la segunda barra */
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px); /* Animación de la tercera barra */
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones para Plantas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/planta.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/uqroo.png') }}" alt="Smart Leaf Logo" class="header-logo">
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/planta.png') }}" alt="Smart Leaf Logo" class="header-logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="mini-header">
+            <h1>Smart Leaf</h1> <!-- Título dentro del contenedor -->
+        </div>
+
+        {% if img_path %}
+        <!-- Agregamos clases dinámicas en función de la predicción -->
+        <div class="planta {% if resultado == 'sana' %}fondo-verde{% elif resultado == 'enferma' %}fondo-naranja{% endif %}">
+            <h2>Imagen Reciente</h2>
+            <img src="{{ img_path }}" alt="Planta">
+            <p><strong>Predicción:</strong> {{ predicho }}</p>
+            <p><strong>Aviso:</strong> {{ aviso }}</p>
+        </div>
+        {% else %}
+        <div class="planta">
+            <p>No hay imágenes disponibles.</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
